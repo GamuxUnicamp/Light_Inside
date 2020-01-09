@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Abuse In The Orphanage.ogg-b34b0c278babf316c3477069517105ad.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/Abuse In The Orphanage.ogg"
+dest_files=[ "res://.import/Abuse In The Orphanage.ogg-b34b0c278babf316c3477069517105ad.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

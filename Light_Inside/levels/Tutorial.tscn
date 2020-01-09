@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/fonts/Kingthings Trypewriter 2.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1017.53, 65.2095 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 56
+font_data = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Chao" type="StaticBody2D" parent="."]
+position = Vector2( 934.71, 1038.57 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Chao"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chao"]
+shape = SubResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 663.325
+margin_top = 28.8402
+margin_right = 924.325
+margin_bottom = 91.8402
+custom_fonts/font = SubResource( 2 )
+text = "Tutorial"

@@ -30,12 +30,16 @@ window/size/height=1080
 window/size/test_width=1280
 window/size/test_height=720
 window/handheld/orientation="sensor_landscape"
+mouse_cursor/custom_image="res://assets/images/cursor.png"
+mouse_cursor/custom_image_hotspot=Vector2( 16, 16 )
+mouse_cursor/tooltip_position_offset=Vector2( 26, 26 )
 window/stretch/mode="2d"
-window/stretch/aspect="expand"
+window/stretch/aspect="keep"
 
 [rendering]
 
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
+environment/default_clear_color=Color( 0.0784314, 0.0784314, 0.0784314, 1 )
 environment/default_environment="res://default_env.tres"
