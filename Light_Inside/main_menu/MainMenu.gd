@@ -13,7 +13,7 @@ func _ready():
 	exit_button.connect("pressed",self,"sair")
 
 func jogar():
-	get_tree().change_scene("res://levels/Tutorial.tscn")
+	get_tree().change_scene("res://levels/Tutorial-1.tscn")
 
 func opcoes():
 	get_tree().change_scene("res://main_menu/Opcoes.tscn")

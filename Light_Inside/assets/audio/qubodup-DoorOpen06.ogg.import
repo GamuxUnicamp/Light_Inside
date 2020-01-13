@@ -11,5 +11,5 @@ dest_files=[ "res://.import/qubodup-DoorOpen06.ogg-d4e4fa3cd37f4e5a3d16ea99bc613
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
