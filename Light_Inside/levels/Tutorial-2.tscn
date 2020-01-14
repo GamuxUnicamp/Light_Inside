@@ -43,7 +43,7 @@ position = Vector2( 1961.25, 541.463 )
 scale = Vector2( 100, 1200 )
 
 [node name="Wall3" parent="Obstacles" instance=ExtResource( 4 )]
-position = Vector2( 951.466, 825.322 )
+position = Vector2( 948.816, 536.468 )
 scale = Vector2( 50, 300 )
 
 [node name="Floor2" parent="Obstacles" instance=ExtResource( 4 )]
