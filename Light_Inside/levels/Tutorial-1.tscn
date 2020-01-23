@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://levels/Tutorial-1.gd" type="Script" id=1]
-[ext_resource path="res://assets/images/verde.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/green.png" type="Texture" id=2]
 [ext_resource path="res://objects/Door.tscn" type="PackedScene" id=3]
 [ext_resource path="res://objects/DefaultObstacle.tscn" type="PackedScene" id=4]
 [ext_resource path="res://objects/Key.tscn" type="PackedScene" id=5]
@@ -42,10 +42,6 @@ scale = Vector2( 100, 1200 )
 position = Vector2( 1961.25, 541.463 )
 scale = Vector2( 100, 1200 )
 
-[node name="Wall3" parent="Obstacles" instance=ExtResource( 4 )]
-position = Vector2( 951.466, 825.322 )
-scale = Vector2( 50, 300 )
-
 [node name="Floor2" parent="Obstacles" instance=ExtResource( 4 )]
 position = Vector2( 241.197, 629.874 )
 rotation = 0.174533
@@ -61,7 +57,7 @@ rotation = 0.174533
 scale = Vector2( 550, 50 )
 
 [node name="Ceiling1" parent="Obstacles" instance=ExtResource( 4 )]
-position = Vector2( 65.5944, 36.172 )
+position = Vector2( 160.594, 36.172 )
 scale = Vector2( 400, 100 )
 
 [node name="Ceiling2" parent="Obstacles" instance=ExtResource( 4 )]
@@ -109,7 +105,7 @@ margin_top = 7.5622
 margin_right = 272.003
 margin_bottom = 72.5623
 custom_fonts/font = SubResource( 1 )
-text = "Tutorial"
+text = "Tutorial - 1"
 
 [node name="LabelKeys" type="Label" parent="CanvasLayer"]
 margin_left = 1800.62

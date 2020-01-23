@@ -11,14 +11,11 @@ onready var door_sound = $DoorSoundOpen
 onready var coin_sound = $CoinSound
 onready var canvas_layer = $CanvasLayer
 
-
 func _ready():
-	update_key_label()
 	key1.connect("body_entered", self, "_on_key_body_enter",[key1])
 	key2.connect("body_entered", self, "_on_key_body_enter",[key2])
 	key3.connect("body_entered", self, "_on_key_body_enter",[key3])
 	door.connect("body_entered", self, "_on_door_body_enter")
-	
 	#mobile
 	#if Global.is_mobile():
 	var mobile_buttons = load("res://mobile/MobileButtons1.tscn").instance()
@@ -32,10 +29,9 @@ func _on_key_body_enter(body,args):
 		update_key_label()
 
 func _on_door_body_enter(body):
-	if key_count >= 3:
-		door_sound.play()
-		OS.delay_msec(700)
-		get_tree().change_scene("res://levels/Tutorial-2.tscn")
+	door_sound.play()
+	OS.delay_msec(700)
+	get_tree().change_scene("res://levels/Anxiety-3.tscn")
 
 func update_key_label():
 	key_label.text = str(key_count)+"/3"

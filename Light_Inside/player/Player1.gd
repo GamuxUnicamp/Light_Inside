@@ -41,6 +41,4 @@ func _physics_process(delta):
 	#Collisions
 	for i in get_slide_count():
 		var collider = get_slide_collision(i).collider
-		if collider.is_in_group("key"):
-			print("KEY")
-			collider.queue_free()
+		pass
