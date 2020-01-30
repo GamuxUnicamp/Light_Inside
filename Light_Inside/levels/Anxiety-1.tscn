@@ -14,11 +14,11 @@
 [ext_resource path="res://assets/images/key.png" type="Texture" id=12]
 [ext_resource path="res://player/Player1.tscn" type="PackedScene" id=13]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 size = 40
 font_data = ExtResource( 11 )
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=2]
 size = 64
 font_data = ExtResource( 11 )
 
@@ -122,7 +122,7 @@ margin_left = 614.175
 margin_top = 809.637
 margin_right = 1331.18
 margin_bottom = 894.637
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Ás vezes o caminho é mais longo do que
 parece mas sempre tem uma solução."
@@ -134,7 +134,7 @@ margin_left = 11.0034
 margin_top = 7.5622
 margin_right = 272.003
 margin_bottom = 72.5623
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 text = "Ansiedade - 1"
 
 [node name="LabelKeys" type="Label" parent="CanvasLayer"]
@@ -142,7 +142,7 @@ margin_left = 1800.62
 margin_top = 9.53419
 margin_right = 1927.62
 margin_bottom = 74.5345
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 text = "0/3"
 
 [node name="key" type="Sprite" parent="CanvasLayer/LabelKeys"]

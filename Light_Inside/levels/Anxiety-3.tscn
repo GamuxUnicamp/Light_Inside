@@ -95,7 +95,8 @@ rotation = 1.0472
 scale = Vector2( 50, 400 )
 
 [node name="Floor9" parent="Obstacles" instance=ExtResource( 4 )]
-position = Vector2( 1621.13, 782.288 )
+position = Vector2( 1643.45, 818.552 )
+rotation = 0.174533
 scale = Vector2( 50, 400 )
 
 [node name="Floor10" parent="Obstacles" instance=ExtResource( 4 )]
