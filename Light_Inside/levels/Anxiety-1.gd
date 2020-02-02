@@ -18,9 +18,9 @@ func _ready():
 	key3.connect("body_entered", self, "_on_key_body_enter",[key3])
 	door.connect("body_entered", self, "_on_door_body_enter")
 	#mobile
-	#if Global.is_mobile():
-	var mobile_buttons = load("res://mobile/MobileButtons1.tscn").instance()
-	canvas_layer.add_child(mobile_buttons)
+	if Global.is_mobile():
+		var mobile_buttons = load("res://mobile/MobileButtons1.tscn").instance()
+		canvas_layer.add_child(mobile_buttons)
 
 func _on_key_body_enter(body,args):
 	if body.is_in_group("player"):
@@ -28,6 +28,8 @@ func _on_key_body_enter(body,args):
 		coin_sound.play()
 		args.queue_free()
 		update_key_label()
+		if key_count >= 2:
+			$CanvasLayer/Eye.visible = true  
 
 func _on_door_body_enter(body):
 	if key_count >= 3:

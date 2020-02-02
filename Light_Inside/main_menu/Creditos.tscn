@@ -10,7 +10,7 @@ font_data = ExtResource( 2 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "Default"
-length = 25.0
+length = 26.0
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:rect_position")
 tracks/0/interp = 1
@@ -18,10 +18,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 25 ),
+"times": PoolRealArray( 0, 26 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 115, 1080 ), Vector2( 115, -1200 ) ]
+"values": [ Vector2( 115, 1080 ), Vector2( 115, -1500 ) ]
 }
 tracks/1/type = "method"
 tracks/1/path = NodePath("..")
@@ -30,7 +30,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 25 ),
+"times": PoolRealArray( 26 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
@@ -42,12 +42,15 @@ tracks/1/keys = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label" type="Label" parent="."]
 margin_left = 115.0
 margin_top = 1080.0
 margin_right = 1833.0
-margin_bottom = 2217.0
+margin_bottom = 2577.0
 custom_fonts/font = SubResource( 1 )
 text = "Game Design, Pesquisa, Pixel Art, Código
 Alec Santos
@@ -57,7 +60,7 @@ Game Design, Pesquisa, Arte 2D, Roteiro, Level Design
 Mari Campos
 
 
-Musica
+Música
 Full of Memories - Alexandr Zhelanov
 Malign Chords Music Pack - Patrick de Arteaga
 
@@ -72,8 +75,12 @@ Kingthings Typewriter - Kevin King
 Crayon Hand - Ursula Hitz
 
 Agradecimentos
-Game Maker Toolkit"
+Game Maker Toolkit
+Prof. Dr. André Santanché"
 align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Label"]
 autoplay = "Default"

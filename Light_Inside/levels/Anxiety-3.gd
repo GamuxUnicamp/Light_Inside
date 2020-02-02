@@ -18,9 +18,9 @@ func _ready():
 	key3.connect("body_entered", self, "_on_key_body_enter",[3])
 	door.connect("body_entered", self, "_on_door_body_enter")
 	#mobile
-	#if Global.is_mobile():
-	var mobile_buttons = load("res://mobile/MobileButtons1.tscn").instance()
-	canvas_layer.add_child(mobile_buttons)
+	if Global.is_mobile():
+		var mobile_buttons = load("res://mobile/MobileButtons1.tscn").instance()
+		canvas_layer.add_child(mobile_buttons)
 
 func _on_key_body_enter(body,args):
 	if body.is_in_group("player"):
@@ -54,7 +54,7 @@ func _on_door_body_enter(body):
 	if key_count >=3:
 		door_sound.play()
 		OS.delay_msec(700)
-		get_tree().change_scene("res://levels/LevelSelect.tscn")
+		get_tree().change_scene("res://main_menu/LevelSelect.tscn")
 
 func update_key_label():
 	key_label.text = str(key_count)+"/3"

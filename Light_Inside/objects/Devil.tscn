@@ -1,0 +1,39 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/images/devil/frame_3.jpg" type="Texture" id=1]
+[ext_resource path="res://assets/images/devil/frame_2.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/images/devil/frame_4.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/images/devil/frame_5.jpg" type="Texture" id=4]
+[ext_resource path="res://assets/images/devil/frame_0.jpg" type="Texture" id=5]
+[ext_resource path="res://assets/images/devil/frame_1.jpg" type="Texture" id=6]
+
+[sub_resource type="GDScript" id=2]
+
+[sub_resource type="Shader" id=3]
+code = "shader_type canvas_item;
+
+uniform float bright_amount;
+
+void fragment() {
+    vec4 c = texture(TEXTURE, UV);
+    c.rgb += vec3(bright_amount);
+    COLOR = c;
+}"
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = SubResource( 3 )
+shader_param/bright_amount = 0.1
+script = SubResource( 2 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 30.0
+} ]
+
+[node name="AnimatedSprite" type="AnimatedSprite"]
+material = SubResource( 4 )
+frames = SubResource( 1 )
+playing = true

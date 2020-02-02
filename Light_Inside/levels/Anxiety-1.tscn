@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://levels/Anxiety-1.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/blue.png" type="Texture" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://assets/fonts/CrayonHandRegular2016Demo.ttf" type="DynamicFontData" id=11]
 [ext_resource path="res://assets/images/key.png" type="Texture" id=12]
 [ext_resource path="res://player/Player1.tscn" type="PackedScene" id=13]
+[ext_resource path="res://objects/Eye.tscn" type="PackedScene" id=14]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -128,6 +129,12 @@ text = "Ás vezes o caminho é mais longo do que
 parece mas sempre tem uma solução."
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_priority = -1
+
+[node name="Eye" parent="CanvasLayer" instance=ExtResource( 14 )]
+visible = false
+position = Vector2( 1836.44, 443.379 )
+frame = 13
 
 [node name="LabelTitle" type="Label" parent="CanvasLayer"]
 margin_left = 11.0034
@@ -150,8 +157,8 @@ position = Vector2( -34.5183, 28.6721 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 12 )
 
-[node name="Player" parent="CanvasLayer" groups=[
+[node name="Player" parent="." groups=[
 "player",
 ] instance=ExtResource( 13 )]
-position = Vector2( 71.0434, 192.295 )
+position = Vector2( 121.266, 244.583 )
 scale = Vector2( 4, 4 )

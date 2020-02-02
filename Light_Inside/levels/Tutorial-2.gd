@@ -40,7 +40,7 @@ func _on_door_body_enter(body):
 	if key_count >= 3:
 		door_sound.play()
 		OS.delay_msec(700)
-		get_tree().change_scene("res://levels/LevelSelect.tscn")
+		get_tree().change_scene("res://main_menu/LevelSelect.tscn")
 
 func update_key_label():
 	key_label.text = str(key_count)+"/3"

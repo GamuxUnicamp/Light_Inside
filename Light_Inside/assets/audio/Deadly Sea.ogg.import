@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Deadly Sea.ogg-8d5e4a629dba7b739a023557b555ff3c.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/Deadly Sea.ogg"
+dest_files=[ "res://.import/Deadly Sea.ogg-8d5e4a629dba7b739a023557b555ff3c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

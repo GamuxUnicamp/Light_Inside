@@ -95,7 +95,7 @@ rotation = 1.0472
 scale = Vector2( 50, 400 )
 
 [node name="Floor9" parent="Obstacles" instance=ExtResource( 4 )]
-position = Vector2( 1643.45, 818.552 )
+position = Vector2( 1634.82, 837.978 )
 rotation = 0.174533
 scale = Vector2( 50, 400 )
 
@@ -157,9 +157,9 @@ e resolva uma coisa de cada vez"
 
 [node name="Hint2" type="Label" parent="."]
 visible = false
-margin_left = 619.18
+margin_left = 634.18
 margin_top = 426.636
-margin_right = 1221.18
+margin_right = 1236.18
 margin_bottom = 511.636
 rect_pivot_offset = Vector2( -1406.62, 650 )
 custom_fonts/font = SubResource( 1 )

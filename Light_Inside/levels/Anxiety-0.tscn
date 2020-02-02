@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://objects/Devil.tscn" type="PackedScene" id=1]
+[ext_resource path="res://levels/Anxiety-0.gd" type="Script" id=2]
+[ext_resource path="res://assets/images/blue.png" type="Texture" id=3]
+[ext_resource path="res://assets/audio/Deadly Sea.ogg" type="AudioStream" id=4]
+
+[node name="Anxiety-0" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Pink" type="Sprite" parent="."]
+position = Vector2( 1001.23, 625.953 )
+scale = Vector2( 2974.96, 1782.7 )
+texture = ExtResource( 3 )
+
+[node name="AnimatedSprite" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1007.16, 542.164 )
+scale = Vector2( 5, 5 )
+frame = 5
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
