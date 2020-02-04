@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://player/Player1.gd" type="Script" id=1]
-[ext_resource path="res://assets/images/MC1.png" type="Texture" id=2]
+[ext_resource path="res://player/Player2.gd" type="Script" id=1]
+[ext_resource path="res://assets/images/MC2.png" type="Texture" id=2]
 [ext_resource path="res://assets/audio/Jump_03.wav" type="AudioStream" id=3]
 
 [sub_resource type="Animation" id=1]
@@ -63,7 +63,7 @@ glow_bloom = 0.23
 radius = 9.34612
 height = 38.3995
 
-[node name="Player1" type="KinematicBody2D"]
+[node name="Player2" type="KinematicBody2D"]
 scale = Vector2( 2, 2 )
 script = ExtResource( 1 )
 

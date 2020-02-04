@@ -17,17 +17,18 @@ __meta__ = {
 }
 
 [node name="family" type="Sprite" parent="."]
-position = Vector2( 989.816, 337.428 )
+position = Vector2( 962.418, 378.525 )
 rotation = 0.174533
 texture = ExtResource( 2 )
 
 [node name="AnxietyButton" type="TextureButton" parent="."]
-margin_left = 58.0
-margin_top = 922.0
-margin_right = 424.0
-margin_bottom = 1005.0
+margin_left = 47.7256
+margin_top = 785.008
+margin_right = 413.726
+margin_bottom = 868.008
 __meta__ = {
-"_edit_group_": true
+"_edit_group_": true,
+"_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="AnxietyButton"]
@@ -38,7 +39,26 @@ margin_bottom = 64.934
 custom_fonts/font = SubResource( 1 )
 text = "Ansiedade"
 
+[node name="TutorialButton" type="TextureButton" parent="."]
+margin_left = 47.7256
+margin_top = 685.69
+margin_right = 413.726
+margin_bottom = 768.69
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="TutorialButton"]
+margin_left = 19.938
+margin_top = -7.06604
+margin_right = 354.938
+margin_bottom = 64.934
+custom_fonts/font = SubResource( 1 )
+text = "Tutorial"
+
 [node name="DepressionButton" type="TextureButton" parent="."]
+visible = false
 margin_left = 525.813
 margin_top = 912.412
 margin_right = 936.818
@@ -53,15 +73,35 @@ custom_fonts/font = SubResource( 1 )
 text = "Depressão"
 
 [node name="AngerButton" type="TextureButton" parent="."]
+visible = false
 margin_left = 953.666
 margin_top = 919.623
 margin_right = 1364.67
 margin_bottom = 1002.62
 __meta__ = {
-"_edit_group_": true
+"_edit_group_": true,
+"_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="AngerButton"]
 custom_fonts/font = SubResource( 1 )
 text = "Raiva
 "
+
+[node name="ExtraButton" type="TextureButton" parent="."]
+visible = false
+margin_left = 1204.87
+margin_top = 931.447
+margin_right = 1615.87
+margin_bottom = 1014.44
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ExtraButton"]
+custom_fonts/font = SubResource( 1 )
+text = "Extra"
+__meta__ = {
+"_edit_use_anchors_": false
+}

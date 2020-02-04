@@ -6,4 +6,4 @@ func _ready():
 	$Timer.connect("timeout", self, "next_level")
 
 func next_level():
-	get_tree().change_scene("res://levels/Anxiety-1.tscn")
+	get_tree().change_scene("res://main_menu/LevelSelect.tscn")

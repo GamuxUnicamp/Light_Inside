@@ -47,6 +47,9 @@ texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 3 )
 texture_focused = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="OptionsButton" type="TextureButton" parent="."]
 margin_left = 61.9395
@@ -57,6 +60,9 @@ texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 5 )
 texture_focused = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="CreditsButton" type="TextureButton" parent="."]
 margin_left = 59.6126
@@ -67,19 +73,25 @@ texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 7 )
 texture_hover = ExtResource( 7 )
 texture_focused = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="ExitButton" type="TextureButton" parent="."]
-margin_left = 1678.43
+margin_left = 1685.43
 margin_top = 963.266
-margin_right = 1860.43
+margin_right = 1867.43
 margin_bottom = 1031.27
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 9 )
 texture_focused = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Logo" type="Sprite" parent="."]
-position = Vector2( 977.06, 157.746 )
+position = Vector2( 985.06, 170.746 )
 texture = ExtResource( 10 )
 __meta__ = {
 "_edit_group_": true

@@ -7,9 +7,9 @@
 [ext_resource path="res://assets/images/devil/frame_0.jpg" type="Texture" id=5]
 [ext_resource path="res://assets/images/devil/frame_1.jpg" type="Texture" id=6]
 
-[sub_resource type="GDScript" id=2]
+[sub_resource type="GDScript" id=1]
 
-[sub_resource type="Shader" id=3]
+[sub_resource type="Shader" id=2]
 code = "shader_type canvas_item;
 
 uniform float bright_amount;
@@ -20,12 +20,12 @@ void fragment() {
     COLOR = c;
 }"
 
-[sub_resource type="ShaderMaterial" id=4]
-shader = SubResource( 3 )
-shader_param/bright_amount = 0.1
-script = SubResource( 2 )
+[sub_resource type="ShaderMaterial" id=3]
+shader = SubResource( 2 )
+shader_param/bright_amount = 0.05
+script = SubResource( 1 )
 
-[sub_resource type="SpriteFrames" id=1]
+[sub_resource type="SpriteFrames" id=4]
 animations = [ {
 "frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
@@ -34,6 +34,7 @@ animations = [ {
 } ]
 
 [node name="AnimatedSprite" type="AnimatedSprite"]
-material = SubResource( 4 )
-frames = SubResource( 1 )
+material = SubResource( 3 )
+frames = SubResource( 4 )
+frame = 5
 playing = true

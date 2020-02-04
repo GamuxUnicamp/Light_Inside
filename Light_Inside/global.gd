@@ -1,8 +1,8 @@
 extends Node
 
-var OS
+var vos
 
 func is_mobile():
-	if OS=="Android" or OS=="iOS":
+	if vos=="Android" or vos=="iOS":
 		return true
 	return false

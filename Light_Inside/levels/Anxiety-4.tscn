@@ -1,20 +1,24 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://levels/Anger-1.gd" type="Script" id=1]
-[ext_resource path="res://assets/images/pink.png" type="Texture" id=2]
+[ext_resource path="res://levels/Anxiety-4.gd" type="Script" id=1]
+[ext_resource path="res://assets/images/blue.png" type="Texture" id=2]
 [ext_resource path="res://objects/Door.tscn" type="PackedScene" id=3]
 [ext_resource path="res://objects/DefaultObstacle.tscn" type="PackedScene" id=4]
 [ext_resource path="res://objects/Key.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/audio/qubodup-DoorOpen06.ogg" type="AudioStream" id=6]
 [ext_resource path="res://assets/audio/qubodup-DoorClose06.ogg" type="AudioStream" id=7]
 [ext_resource path="res://assets/audio/Picked Coin Echo.wav" type="AudioStream" id=8]
-[ext_resource path="res://assets/audio/Its Time To Run.ogg" type="AudioStream" id=9]
+[ext_resource path="res://assets/audio/Deadly Sea.ogg" type="AudioStream" id=9]
 [ext_resource path="res://player/Player1.tscn" type="PackedScene" id=10]
 [ext_resource path="res://assets/fonts/CrayonHandRegular2016Demo.ttf" type="DynamicFontData" id=11]
 [ext_resource path="res://assets/images/key.png" type="Texture" id=12]
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
+font_data = ExtResource( 11 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 45
 font_data = ExtResource( 11 )
 
 [node name="Anger" type="Node2D"]
@@ -30,20 +34,21 @@ scale = Vector2( 2907.62, 1553.33 )
 texture = ExtResource( 2 )
 
 [node name="Door" parent="." instance=ExtResource( 3 )]
-position = Vector2( 9388.36, 812.065 )
+position = Vector2( 6291.83, 921.218 )
+scale = Vector2( 0.5, 0.5 )
 
 [node name="Obstacles" type="Node" parent="."]
 
 [node name="Floor" parent="Obstacles" instance=ExtResource( 4 )]
-position = Vector2( 4905.34, 1055.53 )
-scale = Vector2( 10000, 150 )
+position = Vector2( 3184.09, 1044.53 )
+scale = Vector2( 6500, 150 )
 
 [node name="Wall1" parent="Obstacles" instance=ExtResource( 4 )]
 position = Vector2( -41.4243, 537.605 )
 scale = Vector2( 100, 1200 )
 
 [node name="Wall2" parent="Obstacles" instance=ExtResource( 4 )]
-position = Vector2( 9854.35, 659.034 )
+position = Vector2( 6393.76, 502.96 )
 scale = Vector2( 100, 1200 )
 
 [node name="Floor2" parent="Obstacles" instance=ExtResource( 4 )]
@@ -60,9 +65,23 @@ position = Vector2( 1737.02, 645.19 )
 rotation = 0.174533
 scale = Vector2( 550, 50 )
 
+[node name="Floor7" parent="Obstacles" instance=ExtResource( 4 )]
+position = Vector2( 4653.23, 620.749 )
+rotation = 0.174533
+scale = Vector2( 550, 50 )
+
+[node name="Floor6" parent="Obstacles" instance=ExtResource( 4 )]
+position = Vector2( 5361.87, 387.085 )
+scale = Vector2( 700, 50 )
+
+[node name="Floor5" parent="Obstacles" instance=ExtResource( 4 )]
+position = Vector2( 6149.05, 636.065 )
+rotation = 0.174533
+scale = Vector2( 550, 50 )
+
 [node name="Ceiling1" parent="Obstacles" instance=ExtResource( 4 )]
 position = Vector2( 160.594, 36.172 )
-scale = Vector2( 400, 100 )
+scale = Vector2( 500, 100 )
 
 [node name="Ceiling2" parent="Obstacles" instance=ExtResource( 4 )]
 position = Vector2( 1922.6, 41.9169 )
@@ -73,17 +92,17 @@ scale = Vector2( 400, 100 )
 [node name="Key1" parent="Keys" groups=[
 "key",
 ] instance=ExtResource( 5 )]
-position = Vector2( 268.117, 466.58 )
+position = Vector2( 4429.16, 138.254 )
 
 [node name="Key2" parent="Keys" groups=[
 "key",
 ] instance=ExtResource( 5 )]
-position = Vector2( 952.485, 201.122 )
+position = Vector2( 5355.93, 116.678 )
 
 [node name="Key3" parent="Keys" groups=[
 "key",
 ] instance=ExtResource( 5 )]
-position = Vector2( 1731.93, 450.857 )
+position = Vector2( 6301.29, 205.922 )
 
 [node name="DoorSoundOpen" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
@@ -103,7 +122,7 @@ autoplay = true
 [node name="Player" parent="." groups=[
 "player",
 ] instance=ExtResource( 10 )]
-position = Vector2( 104.777, 836.975 )
+position = Vector2( 138.652, 846.763 )
 scale = Vector2( 4, 4 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -121,7 +140,10 @@ margin_top = 7.5622
 margin_right = 272.003
 margin_bottom = 72.5623
 custom_fonts/font = SubResource( 1 )
-text = "Raiva - 1"
+text = "Ansiedade-4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="LabelKeys" type="Label" parent="CanvasLayer"]
 margin_left = 1800.62
@@ -135,3 +157,16 @@ text = "0/3"
 position = Vector2( -34.5183, 28.6721 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 12 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 2475.48
+margin_top = 271.376
+margin_right = 4752.48
+margin_bottom = 332.376
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Mesmo quando se sentir pequeno
+lembre-se que ainda é tão capaz quanto antes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
