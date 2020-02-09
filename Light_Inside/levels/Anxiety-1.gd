@@ -24,9 +24,9 @@ func _ready():
 	fake2.connect("body_entered", self, "_on_fake_body_enter",[fake2])
 	fake3.connect("body_entered", self, "_on_fake_body_enter",[fake3])
 	#mobile
-	if Global.is_mobile():
-		var mobile_buttons = load("res://mobile/MobileButtons1.tscn").instance()
-		canvas_layer.add_child(mobile_buttons)
+	#if Global.is_mobile():
+	var mobile_buttons = load("res://mobile/MobileButtons1.tscn").instance()
+	canvas_layer.add_child(mobile_buttons)
 
 func _on_key_body_enter(body,args):
 	if body.is_in_group("player"):

@@ -80,7 +80,7 @@ rotation = 0.174533
 scale = Vector2( 550, 50 )
 
 [node name="Ceiling1" parent="Obstacles" instance=ExtResource( 4 )]
-position = Vector2( 160.594, 36.172 )
+position = Vector2( 180.594, 36.172 )
 scale = Vector2( 500, 100 )
 
 [node name="Ceiling2" parent="Obstacles" instance=ExtResource( 4 )]
@@ -135,12 +135,12 @@ smoothing_enabled = true
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="LabelTitle" type="Label" parent="CanvasLayer"]
-margin_left = 11.0034
-margin_top = 7.5622
-margin_right = 272.003
-margin_bottom = 72.5623
+margin_left = 5.46321
+margin_top = 9.77826
+margin_right = 415.463
+margin_bottom = 74.7784
 custom_fonts/font = SubResource( 1 )
-text = "Ansiedade-4"
+text = "Ansiedade - 4"
 __meta__ = {
 "_edit_use_anchors_": false
 }
